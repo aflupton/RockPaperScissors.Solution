@@ -39,11 +39,11 @@ _An app for two people to play the children's game, "Rock, Paper, Scissors." The
 
 ## Known Bugs
 
-_Currently the app is without a front end._
+_Currently the app doesn't have a front end._
 
 ## Support and contact details
 
-_If you would like to contact me for any further information, email me at aflupton@gmail.com_
+_If you have any questions, email me at aflupton@gmail.com_
 
 ## Technologies Used
 

@@ -9,22 +9,22 @@ namespace RockPaperScissors.TestTools
   public class RockPaperScissorsTest
   {
 
-    [TestMethod]
-    public void
-    {
-
-    }
-
-    [TestMethod]
-    public void ()
-    {
-
-    }
-
-    [TestMethod]
-    public void ()
-    {
-
-    }
+    // [TestMethod]
+    // public void
+    // {
+    //
+    // }
+    //
+    // [TestMethod]
+    // public void ()
+    // {
+    //
+    // }
+    //
+    // [TestMethod]
+    // public void ()
+    // {
+    //
+    // }
   }
 }
