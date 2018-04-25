@@ -6,38 +6,32 @@
 
 ## Description
 
-_An app that finds the base Scrabble score of any word entered into the user interface._
+_An app for two people to play the children's game, "Rock, Paper, Scissors." The objective is to "play" or show the sign which outranks your opponent's sign._
 
-* _The program should use the following values to score words given by the user._
-  * _Ex: input: "A", "E", "I", "O", "L", "N", "R", "S", "T" ; output: "1 point"_
-  * _Ex: input: "D", "G" ; output: "2 points"_
-  * _Ex: input: "B", "C", "M", "P" ; output: "3 points"_
-  * _Ex: input: "F", "H", "V", "W", "Y" ; output: "4 points"_
-  * _Ex: input: "K" ; output: "5 points"_
-  * _Ex: input: "J", "K" ; output: "8 points"_
-  * _Ex: input: "Q", "Z" ; output: "10 points"_
+* _The program should accept an input from each play, for each turn, concurrently._
+  * _Ex: player1 plays: rock && player2 plays: paper_
 
-* _The program should calculate word values by adding together the values of each individual character._
+* _If the players play different signs, the program should determine the winning player based on the following rules: Rock > Scissors; Rock < Paper; Paper < Scissors._
+  * _Ex: input: player1 plays: rock && player2 plays: scissors ; output: player1 is the winner_
+  * _Ex: input: player1 plays: rock && player2 plays: paper ; output: player2 is the winner_
+  * _Ex: input: player1 plays: paper && player2 plays: rock ; output: player1 is the winner_
+  * _Ex: input: player1 plays: paper && player2 plays: scissors ; output: player2 is the winner_
+  * _Ex: input: player1 plays: scissors && player2 plays: paper ; output: player1 is the winner_
+  * _Ex: input: player1 plays: scissors && player2 plays: rock ; output: player2 is the winner_
 
-* _The program should only accept standard letters of the English alphabet, and should return an input error for non-alphabetic characters and numbers._
-  * _Ex: input: "$369" ; output: "Please enter a standard scrabble word."_
-  * _Ex: input: "fr1D4y" ; output: "Please enter a standard scrabble word."_
+* _The program should declare a draw if both players play the same sign._
+  * _Ex: input: player1 plays: rock && player2 plays: rock ; output: the turn is declared a draw_
+  * _Ex: input: player1 plays: paper && player2 plays: paper ; output: the turn is declared a draw_
+  * _Ex: input: player1 plays: scissors && player2 plays: scissors ; output: the turn is declared a draw_
 
-* _The program should treat lower-case and upper-case letters as equivalent._
-  * _Ex: input: "START" || "start" ; output: "Your score is: 5"_
-
-* _The program should handle single-letter inputs._
-  * _Ex: input: "i"/"I" or "a"/"A" ; output: "Your score is: 1"_
-
-* _The program should handle multiple-letter inputs._
-  * _Ex: input: "esquire" ; output: "Your score is: 16"_
+* _The program should reset after each turn so that the players can play again._  
 
 
 
 ## Setup/Installation Requirements
 
 * _Clone or download the repository._
-* _Open the console and move to the ScrabbleScore project directory_
+* _Open the console and move to the RockPaperScissors project directory_
 * _Execute "dotnet restore" in the console._
 * _Execute "dotnet run" in the console._
 * _Open a web browser._
