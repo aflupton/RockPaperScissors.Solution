@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using RockPaperScissors.Models;
+using RockPaperScissorsApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace RockPaperScissors.Controllers
+namespace RockPaperScissorsApp.Controllers
 {
   public class HomeController : Controller
   {
@@ -18,7 +18,7 @@ namespace RockPaperScissors.Controllers
     {
       string p1 = Request.Form["player1"];
       string p2 = Request.Form["player2"];
-      Game inputs = new Game(p1, p2);
+      RockPaperScissors inputs = new RockPaperScissors(p1, p2);
       string winner = inputs.Winner();
       Console.WriteLine(winner);
       return View("Result", winner);

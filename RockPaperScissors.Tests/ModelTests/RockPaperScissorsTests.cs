@@ -1,91 +1,91 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RockPaperScissors.Models;
+using RockPaperScissorsApp.Models;
 using System;
 using System.Collections.Generic;
 
-namespace RockPaperScissors.Tests
+namespace RockPaperScissorsApp.Tests
 {
   [TestClass]
   public class RockPaperScissorsTest
   {
 
     [TestMethod]
-    public void Winner_Values_ReturnP1()
+    public void Winner_Values_ReturnP1Win1()
     {
-      Game inputs = new Game("scissors", "paper");
+      string dummyResult1 = "Player One Wins.";
+      RockPaperScissors inputs = new RockPaperScissors("scissors", "paper");
       string winner = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("Player One Wins", winner);
+      Assert.AreEqual(dummyResult1, winner);
     }
 
     [TestMethod]
-    public void Winner_Values_ReturnP1()
+    public void Winner_Values_ReturnP1WIn2()
     {
-      Game inputs = new Game("paper", "rock");
+      string dummyResult1 = "Player One Wins.";
+      RockPaperScissors inputs = new RockPaperScissors("paper", "rock");
       string winner = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("Player One Wins", winner);
+      Assert.AreEqual(dummyResult1, winner);
     }
 
     [TestMethod]
-    public void Winner_Values_ReturnP1()
+    public void Winner_Values_ReturnP1Win3()
     {
-      Game inputs = new Game("rock", "scissors");
+      string dummyResult1 = "Player One Wins.";
+      RockPaperScissors inputs = new RockPaperScissors("rock", "scissors");
       string winner = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("Player One Wins", winner);
+      Assert.AreEqual(dummyResult1, winner);
     }
 
     [TestMethod]
-    public void Winner_Values_ReturnP2()
+    public void Winner_Values_ReturnP2Win1()
     {
-      Game inputs = new Game("rock", "paper");
+      string dummyResult2 = "Player Two Wins.";
+      RockPaperScissors inputs = new RockPaperScissors("rock", "paper");
       string winner = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("Player Two Wins", winner);
+      Assert.AreEqual(dummyResult2, winner);
     }
     [TestMethod]
-    public void Winner_Values_ReturnP2()
+    public void Winner_Values_ReturnP2Win2()
     {
-      Game inputs = new Game("paper", "scissors");
+      string dummyResult2 = "Player Two Wins.";
+      RockPaperScissors inputs = new RockPaperScissors("paper", "scissors");
       string winner = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("Player Two Wins", winner);
+      Assert.AreEqual(dummyResult2, winner);
     }
     [TestMethod]
-    public void Winner_Values_ReturnP2()
+    public void Winner_Values_ReturnP2Win3()
     {
-      Game inputs = new Game("scissors", "rock");
+      string dummyResult2 = "Player Two Wins.";
+      RockPaperScissors inputs = new RockPaperScissors("scissors", "rock");
       string winner = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("Player Two Wins", winner);
+      Assert.AreEqual(dummyResult2, winner);
     }
 
     [TestMethod]
-    public void Winner_Values_RockPaperScissors()
+    public void Winner_Values_ReturnDraw1()
     {
-      Game inputs = new Game("paper", "paper");
-      string inputs = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("The game is a draw, play again.");
+      string dummyResult3 = "The game is a draw, try again.";
+      RockPaperScissors inputs = new RockPaperScissors("paper", "paper");
+      string winner = inputs.Winner();
+      Assert.AreEqual(dummyResult3, winner);
     }
 
     [TestMethod]
-    public void Winner_Values_ReturnDraw()
+    public void Winner_Values_ReturnDraw2()
     {
-      Game inputs = new Game("rock", "rock");
-      string inputs = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("The game is a draw, play again.");
+      string dummyResult3 = "The game is a draw, try again.";
+      RockPaperScissors inputs = new RockPaperScissors("rock", "rock");
+      string winner = inputs.Winner();
+      Assert.AreEqual(dummyResult3, winner);
     }
 
     [TestMethod]
-    public void Winner_Values_ReturnDraw()
+    public void Winner_Values_ReturnDraw3()
     {
-      Game inputs = new Game("scissors", "scissors");
-      string inputs = inputs.Winner();
-      Console.WriteLine(winner);
-      Assert.AreEqual("The game is a draw, play again.");
+      string dummyResult3 = "The game is a draw, try again.";
+      RockPaperScissors inputs = new RockPaperScissors("scissors", "scissors");
+      string winner = inputs.Winner();
+      Assert.AreEqual(dummyResult3, winner);
     }
   }
 }

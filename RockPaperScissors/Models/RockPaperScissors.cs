@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 
-namespace RockPaperScissors.Models
+namespace RockPaperScissorsApp.Models
 {
   public class RockPaperScissors
   {
@@ -12,7 +12,7 @@ namespace RockPaperScissors.Models
     private string _player2Input;
 
 
-    public Game(string player1, string player2)
+    public RockPaperScissors(string player1, string player2)
     {
       _player1Input = player1;
       _player2Input = player2;
@@ -33,19 +33,19 @@ namespace RockPaperScissors.Models
       string result = " ";
       if ((_player1Input == "rock" && _player2Input == "scissors")||(_player1Input == "paper" && _player2Input == "rock")||(_player1Input == "scissors" && _player2Input == "paper"))
       {
-        return "Player One Wins.";
+        result = "Player One Wins.";
       }
       else if ((_player1Input == "rock" && _player2Input == "paper")||(_player1Input == "paper" && _player2Input == "scissors")||(_player1Input == "scissors" && _player2Input == "rock"))
       {
-        return "Player Two wins.";
+        result = "Player Two Wins.";
       }
       else if ((_player1Input == "rock" && _player2Input == "rock")||(_player1Input == "paper" && _player2Input == "paper")||(_player1Input == "scissors" && _player2Input == "scissors"))
       {
-        return "The game is a draw, try again.";
+        result = "The game is a draw, try again.";
       }
       else
       {
-        return "Invalid response(s), try again.";
+        result = "Invalid response(s), try again.";
       }
       return result;
     }
