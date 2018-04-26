@@ -3,7 +3,7 @@ using RockPaperScissorsApp.Models;
 using System;
 using System.Collections.Generic;
 
-namespace RockPaperScissorsApp.Tests
+namespace RockPaperScissorsApp.TestTools
 {
   [TestClass]
   public class RockPaperScissorsTest
