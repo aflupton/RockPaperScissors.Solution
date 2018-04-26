@@ -24,6 +24,8 @@ _An app for two people to play the children's game, "Rock, Paper, Scissors." The
   * _Ex: input: player1 plays: paper && player2 plays: paper ; output: the turn is declared a draw_
   * _Ex: input: player1 plays: scissors && player2 plays: scissors ; output: the turn is declared a draw_
 
+* _The program should return the result of the turn to the players._
+
 * _The program should reset after each turn so that the players can play again._  
 
 
@@ -47,7 +49,7 @@ _If you have any questions, email me at aflupton@gmail.com_
 
 ## Technologies Used
 
-_C#, HTML, CSS/Bootstrap_
+_C#/.NET, HTML, CSS/Bootstrap_
 
 ### License
 
